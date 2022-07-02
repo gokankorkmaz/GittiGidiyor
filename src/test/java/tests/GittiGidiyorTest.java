@@ -21,6 +21,8 @@ public class GittiGidiyorTest extends TestBase {
         //5.Login Account
         //6.Verify login successful
         //7.Search "Bilgisayar" on the searchbox
+        //8.go to page two
+        //9.Verify that the second page opens
 
 
         //1. Navigate to url 'https://www.gittigidiyor.com/'
