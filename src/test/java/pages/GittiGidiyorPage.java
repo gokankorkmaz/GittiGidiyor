@@ -22,7 +22,9 @@ public class GittiGidiyorPage {
     }
 
     public String expectedUrl = "https://www.gittigidiyor.com/";
-    public String expectedText="Hesabım";
+    public String expectedText = "Hesabım";
+    public String expectedSecondPageUrl="https://www.gittigidiyor.com/arama?k=bilgisayar&sf=2";
+
 
 
     @FindBy(xpath = "//div[@class='wis_clsbtn']")
@@ -35,19 +37,22 @@ public class GittiGidiyorPage {
     @FindBy(css = "a[data-cy='header-login-button']")
     public WebElement loginButton;
 
-    @FindBy(id="L-UserNameField")
+    @FindBy(id = "L-UserNameField")
     public WebElement userName;
 
     @FindBy(xpath = "//input[@id='L-PasswordField']")
     public WebElement password;
 
-    @FindBy(id="gg-login-enter")
+    @FindBy(id = "gg-login-enter")
     public WebElement loginEnter;
 
 
     @FindBy(xpath = "//div[@class='gekhq4-4 egoSnI']")
     public WebElement verifyLogin;
 
-    @FindBy(className = "sc-4995aq-4 dNPmGY")
+    @FindBy(xpath = "//input[@data-cy='header-search-input']")
     public WebElement searchBox;
+
+    @FindBy(xpath = "(//li[@data-testid='pagination-list-item'])[2]")
+    public WebElement secondPage;
 }
