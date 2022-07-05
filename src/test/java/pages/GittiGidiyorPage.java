@@ -37,22 +37,25 @@ public class GittiGidiyorPage {
     @FindBy(css = "a[data-cy='header-login-button']")
     public WebElement loginButton;
 
-    @FindBy(id = "L-UserNameField")
-    public WebElement userName;
+//    @FindBy(id = "L-UserNameField")
+//    public WebElement userName;
+//
+//    @FindBy(xpath = "//input[@id='L-PasswordField']")
+//    public WebElement password;
+//
+//    @FindBy(id = "gg-login-enter")
+//    public WebElement loginEnter;
 
-    @FindBy(xpath = "//input[@id='L-PasswordField']")
-    public WebElement password;
 
-    @FindBy(id = "gg-login-enter")
-    public WebElement loginEnter;
+//    @FindBy(xpath = "//div[@class='gekhq4-4 egoSnI']")
+//    public WebElement verifyLogin;
+//
+//    @FindBy(xpath = "//input[@data-cy='header-search-input']")
+//    public WebElement searchBox;
+//
+//    @FindBy(xpath = "(//li[@data-testid='pagination-list-item'])[2]")
+//    public WebElement secondPage;
 
 
-    @FindBy(xpath = "//div[@class='gekhq4-4 egoSnI']")
-    public WebElement verifyLogin;
 
-    @FindBy(xpath = "//input[@data-cy='header-search-input']")
-    public WebElement searchBox;
-
-    @FindBy(xpath = "(//li[@data-testid='pagination-list-item'])[2]")
-    public WebElement secondPage;
 }
